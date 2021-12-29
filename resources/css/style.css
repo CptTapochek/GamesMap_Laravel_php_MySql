@@ -1,0 +1,375 @@
+
+.ui {
+
+  width: 745px;
+  height: 700px;
+  background-color: #fff;
+border: 2px solid #CACACA;
+  border-radius: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.ui .search input {
+  outline: none;
+  border: none;
+  background: none;
+}
+.ui .search {
+  position: relative;
+}
+.search{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 55px;
+    color: #F5F5F5;
+}
+.ui .search input[type=submit] {
+    font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  right: 25px;
+  top: 27px;
+  color: white;
+}
+.ui .search input[type=search] {
+  background-color: #696c75;
+  border-radius: 3px;
+  padding: 10px;
+  width: 90%;
+  box-sizing: border-box;
+  margin: 15px 10px;
+  color: #fff;
+}
+.ui .left-menu {
+  width: 29%;
+  box-sizing: content-box;
+  padding-right: 1%;
+  height: 100%;
+  background: #434753;
+}
+.ui .chat {
+  width: 70%;
+  height: 100%;
+  background: #F5F5F5;
+}
+.ui .chat .info {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  vertical-align: 40px;
+  width: calc(100% - 65px - 50px);
+}
+.ui .chat .info .name {
+  font-weight: 600;
+    color: #2e2d2d;
+  height: 50%;
+}
+.ui .chat .info .count {
+  color: #CACACA;
+}
+.ui .chat i.fa {
+  color: #CACACA;
+  vertical-align: 25px;
+}
+.ui .avatar > img,
+.ui .list-friends img {
+  border-radius: 50%;
+  border: 3px solid #696c75;
+}
+.ui .list-friends {
+  list-style: none;
+  font-size: 13px;
+  height: 88%;
+}
+.ui .list-friends img {
+  margin: 5px;
+}
+.ui .list-friends > a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 10px 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+    margin-left: -5px;
+}
+.ui .list-friends .info {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.ui .list-friends .user {
+  color: #fff;
+  margin-top: 12px;
+}
+.ui .list-friends .status {
+  position: relative;
+  margin-left: 14px;
+  color: #CACACA;
+}
+.ui .list-friends .off:after,
+.ui .list-friends .on:after {
+  content: '';
+  left: -12px;
+  top: 8px;
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+.ui .list-friends .off:after {
+  background: #fd8064;
+}
+.ui .list-friends .on:after {
+  background: #62bf6e;
+}
+.ui .top {
+  height: 70px;
+}
+.ui .messages {
+  height: calc(100% - 70px - 150px);
+  list-style: none;
+  border: 2px solid #fff;
+  border-left: none;
+  border-right: none;
+}
+.ui .messages li {
+  margin: 10px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.ui .messages li:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.ui .messages li .head {
+  font-size: 13px;
+}
+.ui .messages li .name {
+  font-weight: 600;
+  position: relative;
+}
+.ui .messages li .notify:after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  top: 6px;
+}
+.ui .messages li .time {
+  color: #b7bccf;
+}
+.ui .messages li .message {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 10px;
+  line-height: 25px;
+  max-width: 500px;
+  word-wrap: break-word;
+  position: relative;
+}
+.ui .messages li .message:before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: -12px;
+  border-bottom: 12px solid #62bf6e;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.ui .messages li.friend-with-a-SVAGina .name {
+  margin-left: 20px;
+}
+.ui .messages li.friend-with-a-SVAGina .name:after {
+  background-color: #62bf6e;
+  left: -20px;
+  top: 6px;
+}
+.ui .messages li.friend-with-a-SVAGina .message {
+  background-color: #62bf6e;
+  float: left;
+}
+.ui .messages li.friend-with-a-SVAGina .message:before {
+  left: 16px;
+  border-bottom-color: #62bf6e;
+}
+.ui .messages li.i .head {
+  text-align: right;
+}
+.ui .messages li.i .name {
+  margin-right: 20px;
+}
+.ui .messages li.i .name:after {
+  background-color: #7bc4ef;
+  right: -20px;
+  top: 6px;
+}
+.ui .messages li.i .message {
+  background-color: #7bc4ef;
+  float: right;
+}
+.ui .messages li.i .message:before {
+  right: 16px;
+  border-bottom-color: #7bc4ef;
+}
+.ui .write-form {
+  height: 150px;
+}
+.ui .write-form textarea {
+  height: 75px;
+  margin: 17px 5%;
+  width: 90%;
+  outline: none;
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+  resize: none;
+}
+.ui .write-form textarea:before {
+  content: '';
+  clear: both;
+}
+.ui .avatar > img {
+  border-color: #62bf6e;
+  margin: 10px;
+  margin-right: 5px;
+}
+.ui .avatar {
+  display: inline-block;
+}
+.ui .send {
+  color: #7ac5ef;
+  text-transform: uppercase;
+  font-weight: 700;
+  float: right;
+  margin-right: 5%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.write-form > .TextArea_send > .send{
+    border: none;
+    border-radius: 5px;
+    background-color: #74ACEC;
+    color: #F5F5F5;
+    padding: 5px 10px;
+    margin-top: -10px;
+    transition: all.3s ease;
+}
+.write-form > .TextArea_send > .send:hover{
+    background-color: #7BC4EF;
+    color: #2e2d2d;
+}
+.ui i.fa-file-o {
+  margin-left: 15px;
+}
+.ui i.fa-picture-o {
+  margin-left: 5%;
+}
+.MSG_NOTY{
+    margin-left: -30px;
+    margin-bottom: -15px;
+}
+
+@media(max-width: 1210px){
+    .left-menu>h3{
+        font-size: 16px;
+    }
+    .top>a>.info>.name{
+        font-size: 16px;
+    }
+    .messages>.user_msg>.message{
+        font-size: 14px;
+    }
+    .ui{
+        width: 550px;
+    }
+    .ui .write-form textarea {
+        margin: 17px 5%;
+        width: 90%;
+    }
+    .ui .left-menu {
+        width: 39%;
+        padding-right: 1%;
+    }
+    .ui .chat {
+        width: 60%;
+    }
+}
+@media(max-width: 790px){
+    .left-menu>h3{
+        font-size: 14px;
+    }
+    .top>a>.info>.name, button.send{
+        font-size: 14px;
+    }
+    .ui .messages li .message, .ui .list-friends,
+    .ui .messages li .head{
+        font-size: 12px;
+    }
+    .write-form > .TextArea_send > .send{
+        border-radius: 3px;
+        padding: 3px 10px;
+        margin-top: -10px;
+    }
+    .ui{
+        width: 550px;
+    }
+    .ui .write-form textarea {
+        margin: 17px 5%;
+        width: 90%;
+    }
+    .ui .left-menu {
+        width: 39%;
+        padding-right: 1%;
+    }
+    .ui .chat {
+        width: 60%;
+    }
+    #texxt::placeholder, #texxt::-moz-placeholder,
+    #texxt::-webkit-input-placeholder{
+        font-size: 12px;
+        padding: 2px;
+    }
+    #texxt{
+        font: inherit;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+}
+@media(max-width: 600px){
+    .ui{
+        width: 460px;
+    }
+    .ui .left-menu {
+        width: 39%;
+        padding-right: 1%;
+    }
+    .ui .chat {
+        width: 60%;
+    }
+}
