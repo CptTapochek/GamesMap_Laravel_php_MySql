@@ -33,6 +33,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Tag</th>
+                            <th>English name</th>
                             <th>Slug</th>
                             <th>Action</th>
                         </tr>
@@ -40,6 +41,7 @@
                             <tr>
                                 <td>{{ $tag->id }}</td>
                                 <td>{{ $tag->title }}</td>
+                                <td>{{ $tag->en_title }}</td>
                                 <td>{{ $tag->slug }}</td>
                                 <td><div class="ActionCat">
                                         <a href="{{route('Tag.edit', ['Tag' => $tag->id]) }}" title="Edit"><img class="EditCat" src="assets/edit.png"/></a>

@@ -18,6 +18,12 @@ mix.styles([
 ], 'public/css/app.css');
 
 mix.styles([
+    'resources/css/english.css',
+    'resources/css/detail.css',
+    'resources/css/lightbox.css',
+], 'public/css/english.css');
+
+mix.styles([
     'resources/css/normalize.css',
     'resources/css/style.css',
 ], 'public/css/msg_style.css');

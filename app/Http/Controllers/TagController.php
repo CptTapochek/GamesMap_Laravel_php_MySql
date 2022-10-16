@@ -39,6 +39,7 @@ class TagController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'en_title' => 'required',
         ]);
         Tag::create($request->all());
         return redirect()->route('Tag.index')->with('success', 'Tag has been added!');
@@ -68,6 +69,7 @@ class TagController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'en_title' => 'required',
         ]);
         $tags = Tag::find($id);
         //$tags->slug = null;

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Обратная связь &raquo; @include('blocks.title')</title>
-    @include('blocks.links')
+    <title>FeedBack &raquo; @include('en.blocks.title')</title>
+    @include('en.blocks.links')
 </head>
 
 <body>
     <div class="wrapper_tot">
         <div class="content">
-            @include('blocks.header')
+            @include('en.blocks.header')
             <div class="main_content">
-                <div class="LoginMenu">@include('blocks.menu')</div>
+                <div class="LoginMenu">@include('en.blocks.menu')</div>
                 <form action="{{ route('contact-form') }}" class="contactFORM" method="post" enctype="multipart/form-data">
-                    <div class="contactNEW"><p>📝Обратная связь</p></div>
+                    <div class="contactNEW"><p>📝FeedBack</p></div>
                     <div class="contact" id="contact_msg">
                         @csrf
                         @if($errors->any()) <!-- Afisarea erorilor -->
@@ -52,10 +52,10 @@
                             <a id="refresh" title="Refresh"><span class="glyphicon glyphicon-refresh"><img src="assets/reload.svg"></span></a></p>
                         </div>
 
-                        <label for="pin_code">Введите код с картинки:</label>
+                        <label for="pin_code">Enter code from the picture:</label>
                         <input type="text" name="captcha" class="form_control" /><br />
 
-                        <div class="submitBTN"><button type="submit" name="send" class="btn_done">Отправить</button></div><br /><br />
+                        <div class="submitBTN"><button type="submit" name="send" class="btn_done">Send</button></div><br /><br />
 
                     </div>
                 </form>

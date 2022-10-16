@@ -25,8 +25,10 @@
                         </p>
                     </div><br>
                 @endif
-                <label for="title">Title:</label><br>
+                <label for="title">Russian Title:</label><br>
                 <input type="text" name="title" value="{{ $tags->title }}" class="form_control"/><br /><br/>
+                <label for="title">English Title:</label><br>
+                <input type="text" name="en_title" value="{{ $tags->en_title }}" class="form_control"/><br /><br/>
                 <div class="submitCenter"><button type="submit" name="send" class="btn_done">Edit Tag</button></div>
             </form>
         </div>

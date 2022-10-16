@@ -24,8 +24,10 @@
                         </p>
                     </div><br>
                 @endif
-                <label for="title">Title:</label><br>
+                <label for="title">Russian Title:</label><br>
                 <input type="text" name="title" placeholder="Enter the title..." class="form_control"/><br /><br />
+                <label for="title">English Title:</label><br>
+                <input type="text" name="en_title" placeholder="Enter the title..." class="form_control"/><br /><br />
                 <div class="submitCenter"><button type="submit" name="send" class="btn_done">Add Tag</button></div>
             </form>
         </div>

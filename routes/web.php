@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('home');
+//});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -45,7 +45,7 @@ Route::get('aPages/categories/Category', 'App\Http\Controllers\CategoryControlle
 Route::get('aPages/Documentation', function (){return view('aPages/Documentation');})->name('documentation')->middleware('admin');
 
 /* Home */
-Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
+Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
 Route::get('posts.Popular_page', 'App\Http\Controllers\HomeController@popular')->name('posts.Popular_page');
 Route::get('posts.top_80', 'App\Http\Controllers\HomeController@top')->name('posts.top_80');
 Route::get('/Disclaimer', function (){return view('/Disclaimer');})->name('disclaimer');
@@ -116,8 +116,21 @@ Route::post('/report/send', 'App\Http\Controllers\ReportController@postReport')-
 
 
 /** English version */
+/* Home */
+Route::get('/en', 'App\Http\Controllers\HomeController@index')->name('home_en');
+Route::get('posts.Popular_page/en', 'App\Http\Controllers\HomeController@popular')->name('posts.Popular_page_en');
+Route::get('posts.top_80/en', 'App\Http\Controllers\HomeController@top')->name('posts.top_80_en');
 
+/* Tags */
+Route::get('tag/{slug}/en', 'App\Http\Controllers\TagSortController@show')->name('tags.single_en');
+Route::get('Tag/{slug}/en', 'App\Http\Controllers\TagSortController@showCheat')->name('tags.cheatsTag_en');
 
+/* Category */
+Route::get('category/{slug}/en', 'App\Http\Controllers\CategorySortController@show')->name('categories.single_en');
+Route::get('Category/{slug}/en', 'App\Http\Controllers\CategorySortController@showCheat')->name('categories.cheatsCat_en');
+Route::get('News/{slug}/en', 'App\Http\Controllers\CategorySortController@showNews')->name('categories.news_en');
 
+/* Contact */
+Route::get('/contact/en', 'App\Http\Controllers\ContactController@CreateMessage')->name('contact_en');
 
 

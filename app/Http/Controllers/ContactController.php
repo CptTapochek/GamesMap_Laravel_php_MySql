@@ -14,7 +14,7 @@ class ContactController extends Controller {
 
     public function CreateMessage()
     {
-        return view('/contact');
+        return view('en/contact');
     }
 
     public function submit(ContactRequest $request){

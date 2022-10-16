@@ -13,7 +13,7 @@ class Tag extends Model
 
     use Sortable;
 
-    protected $fillable = ['title'];
+    protected $fillable = ['title', 'en_title'];
 
     public function posts()
     {

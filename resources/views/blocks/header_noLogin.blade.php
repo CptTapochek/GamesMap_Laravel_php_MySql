@@ -21,8 +21,8 @@
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Language</button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="#">English</a>
-                    <a href="#">Русский</a>
+                    <a href="{{route('home_en')}}">English</a>
+                    <a href="{{route('home')}}">Русский</a>
                 </div>
             </div>
         </div>

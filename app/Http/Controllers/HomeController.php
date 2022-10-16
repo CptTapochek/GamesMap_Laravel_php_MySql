@@ -47,7 +47,15 @@ class HomeController extends Controller
         }
         //return view('home', ['slug' => 'games'], compact('category', 'posts'));
         //$posts = Post::sortable()->with('category')->where('category_id', '=', 12)->orderBy('created_at', 'desc')->paginate(24);
-        return view('home', compact('category','posts'));
+
+        $url = (explode('?',$_SERVER['REQUEST_URI']));
+
+        if ($url[0] == '/en'){
+            return view('en/home', compact('category','posts'));
+        }
+        else{
+            return view('home', compact('category','posts'));
+        }
     }
 
     public function popular()
@@ -62,7 +70,14 @@ class HomeController extends Controller
             $posts = Post::sortable()->where('category_id', $GamesID)->with('category')->orderBy('views', 'desc')->paginate(24);
             Cache::put('posts_popular_main', $posts, 86400);
         }
-        return view('posts.Popular_page', compact('posts'));
+
+        $url = (explode('?',$_SERVER['REQUEST_URI']));
+
+        if ($url[0] == '/posts.Popular_page/en'){
+            return view('en.posts.Popular_page', compact('posts'));
+        }else{
+            return view('posts.Popular_page', compact('posts'));
+        }
     }
 
     public function show($slug)
@@ -142,7 +157,13 @@ class HomeController extends Controller
             Cache::put('top_posts', $posts, 86400);
         }
 
-        return view('posts.top80', compact('posts'));
+        $url = (explode('?',$_SERVER['REQUEST_URI']));
+
+        if ($url[0] == '/posts.top_80/en'){
+            return view('en.posts.top80', compact('posts'));
+        }else{
+            return view('posts.top80', compact('posts'));
+        }
     }
 
 }

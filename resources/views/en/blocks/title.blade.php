@@ -1,3 +1,3 @@
 @section('title')
-    Скачать игры через торрент бесплатно на пк, новые игры - Torrent-Map
+    Download games via torrent for free on pc, new games - Torrent-Map
 

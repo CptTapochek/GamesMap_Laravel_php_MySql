@@ -1,11 +1,11 @@
 @section('sorting')
 
-    <button onclick="Sorting()" class="dropSORTbtn">Сортировка:</button>
+    <button onclick="Sorting()" class="dropSORTbtn">Sorting:</button>
         <div id="sorting-list" class="dropdown-sort">
-            <th>@sortablelink('created_at', 'По дате')</th>
-            <th>@sortablelink('views', 'По просмотрам')</th>
-            <th>@sortablelink('count_comment', 'По комментариям')</th>
-            <th>@sortablelink('rating', 'По рейтингу')</th>
+            <th>@sortablelink('created_at', 'By Date')</th>
+            <th>@sortablelink('views', 'By Views')</th>
+            <th>@sortablelink('count_comment', 'By Comments')</th>
+            <th>@sortablelink('rating', 'By Ratting')</th>
         </div>
     <!--
         <th href="@sortablelink('created_at')">Самые популярные</th>

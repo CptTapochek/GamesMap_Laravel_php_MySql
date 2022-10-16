@@ -47,6 +47,24 @@ class AppServiceProvider extends ServiceProvider
             $view->with('popular_posts', $posts);
         });
 
+        view()->composer('en.posts.popular_block', function ($view){
+            if(Auth::check()){
+                if (Auth::user()->is_baned == 1){$x = new UserController(); $x->logout();}
+            }
+            if (Cache::has('posts_pop')){
+                $posts = Cache::get('posts_pop');
+            }
+            else{
+                $category = Category::get();
+                $gamesCat = $category->where('slug', 'games'); $GamesID = 0;
+                foreach ($gamesCat as $x){$GamesID = $x->id;}
+                $posts = Post::where('category_id', '=', $GamesID)->orderBy('views', 'desc')->limit(8)->get();
+                Cache::put('posts_pop', $posts, 86400);
+            }
+
+            $view->with('popular_posts', $posts);
+        });
+
 
         Paginator::useBootstrap();
     }

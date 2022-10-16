@@ -1,55 +1,55 @@
 @section('menu')
 <menu>
     <div class="Main_menu">
-        <div class="logo_cat">Игры:</div>
+        <div class="logo_cat">Games:</div>
         <div class="listOf_tags games">
-            <a href="{{ route('tags.single', ['slug' => 'otkrytyy-mir']) }}">Открытый мир</a>
-            <a href="{{ route('tags.single', ['slug' => 'gonki']) }}">Гонки</a>
-            <a href="{{ route('tags.single', ['slug' => 'stels']) }}">Стелс</a>
-            <a href="{{ route('tags.single', ['slug' => 'igry-s-onlaynom']) }}">Игры с онлайном</a>
-            <a href="{{ route('tags.single', ['slug' => 'zombi']) }}">Зомби</a>
-            <a href="{{ route('tags.single', ['slug' => 'horror']) }}">Хоррор</a>
-            <a href="{{ route('tags.single', ['slug' => 'sportivnye']) }}">Спортивные</a>
-            <a href="{{ route('tags.single', ['slug' => 'vyzhivanie']) }}">Выживание</a>
-            <a href="{{ route('tags.single', ['slug' => 'draki']) }}">Драки</a>
-            <a href="{{ route('tags.single', ['slug' => 'arkady']) }}">Аркады</a>
-            <a href="{{ route('tags.single', ['slug' => 'ozhidaemye']) }}">Ожидаемые</a>
-            <a href="{{ route('tags.single', ['slug' => 'ekshen']) }}">Экшен</a>
-            <a href="{{ route('tags.single', ['slug' => 'dlya-slabyh-pk']) }}">Для слабых ПК</a>
-            <a href="{{ route('tags.single', ['slug' => 'shutery']) }}">Шутеры</a>
-            <a href="{{ route('tags.single', ['slug' => 'horoshiy-syuzhet']) }}">Хороший сюжет</a>
-            <a href="{{ route('tags.single', ['slug' => 'horoshaya-grafika']) }}">Хорошая графика</a>
-            <a href="{{ route('tags.single', ['slug' => 'rolevye-rpg']) }}">Ролевые (Rpg)</a>
-            <a href="{{ route('tags.single', ['slug' => 'simulyatory']) }}">Симуляторы</a>
-            <a href="{{ route('tags.single', ['slug' => 'priklyucheniya']) }}">Приключения</a>
-            <a href="{{ route('tags.single', ['slug' => 'vr-igry']) }}">VR-игры</a>
-            <a href="{{ route('tags.single', ['slug' => 'strategii']) }}">Стратегии</a>
-            <a href="{{ route('tags.single', ['slug' => 'ot-pervogo-lica']) }}">От первого лица</a>
-            <a href="{{ route('tags.single', ['slug' => 'ot-tretego-lica']) }}">От третьего лица</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'otkrytyy-mir']) }}">Open World</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'gonki']) }}">Racing</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'stels']) }}">Stealth</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'igry-s-onlaynom']) }}">Online games</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'zombi']) }}">Zombies</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'horror']) }}">Horror</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'sportivnye']) }}">Sport</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'vyzhivanie']) }}">Survival</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'draki']) }}">Fighting</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'arkady']) }}">Arcade</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'ozhidaemye']) }}">Expected</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'ekshen']) }}">Action</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'dlya-slabyh-pk']) }}">For the weak pc</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'shutery']) }}">Shooter</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'horoshiy-syuzhet']) }}">Good story</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'horoshaya-grafika']) }}">Good graphic</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'rolevye-rpg']) }}">Role Play (Rpg)</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'simulyatory']) }}">Simulators</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'priklyucheniya']) }}">Adventures</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'vr-igry']) }}">VR-games</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'strategii']) }}">Strategy</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'ot-pervogo-lica']) }}">By first person</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'ot-tretego-lica']) }}">By third person</a>
             @php $date = date("Y")@endphp
-            <a href="{{ route('tags.single', ['slug' => $date]) }}">Игры @php echo date("Y"); @endphp</a>
+            <a href="{{ route('tags.single_en', ['slug' => $date]) }}">@php echo date("Y"); @endphp Games</a>
         </div>
     </div>
     <div class="Main_menu">
-        <div class="logo_cat">Софт:</div>
+        <div class="logo_cat">Software:</div>
         <div class="listOf_tags soft">
-            <a href="{{ route('tags.single', ['slug' => 'dizayn']) }}">Дизайн</a>
-            <a href="{{ route('tags.single', ['slug' => 'audio']) }}">Аудио</a>
-            <a href="{{ route('tags.single', ['slug' => 'bezopasnost']) }}">Безопасность</a>
-            <a href="{{ route('tags.single', ['slug' => 'ofis']) }}">Офис</a>
-            <a href="{{ route('tags.single', ['slug' => 'windows']) }}">Windows</a>
-            <a href="{{ route('tags.single', ['slug' => 'programmirovanie']) }}">Программирование</a>
-            <a href="{{ route('tags.single', ['slug' => 'drayvery']) }}">Драйверы</a>
-            <a href="{{ route('tags.single', ['slug' => 'drugie']) }}">Другие</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'dizayn']) }}">Design</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'audio']) }}">Audio</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'bezopasnost']) }}">Security</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'ofis']) }}">Office</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'windows']) }}">Windows</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'programmirovanie']) }}">Programming</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'drayvery']) }}">Drivers</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'drugie']) }}">Others</a>
         </div>
     </div>
     <div class="Main_menu">
-        <div class="logo_cat">Файлы:</div>
+        <div class="logo_cat">Fails:</div>
         <div class="listOf_tags cheets">
-            <a href="{{ route('tags.cheatsTag', ['slug' => 'chit-mody']) }}">Чит-моды</a>
-            <a href="{{ route('tags.cheatsTag', ['slug' => 'sohraneniya']) }}">Сохранения</a>
-            <a href="{{ route('tags.cheatsTag', ['slug' => 'treynery']) }}">Трейнеры</a>
-            <a href="{{ route('tags.cheatsTag', ['slug' => 'mody']) }}">Моды</a>
+            <a href="{{ route('tags.cheatsTag_en', ['slug' => 'chit-mody']) }}">Cheat-mods</a>
+            <a href="{{ route('tags.cheatsTag_en', ['slug' => 'sohraneniya']) }}">Saves</a>
+            <a href="{{ route('tags.cheatsTag_en', ['slug' => 'treynery']) }}">Trainers</a>
+            <a href="{{ route('tags.cheatsTag_en', ['slug' => 'mody']) }}">Mods</a>
         </div>
     </div>
 </menu>
@@ -68,56 +68,56 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="main_admenu">
-            <a href="{{route('home')}}"><p style="margin-left: 75px">Главное</p></a>
-            <a href="{{route('contact')}}">Контакты</a>
-            <a href="{{route('disclaimer')}}">Правообладателям</a>
+            <a href="{{route('home_en')}}"><p style="margin-left: 75px">Main</p></a>
+            <a href="{{route('contact')}}">Contact</a>
+            <a href="{{route('disclaimer')}}">Disclaimer</a>
             <a href="{{route('faq')}}">FAQ</a>
         </div>
         <div class="games_admenu">
-            <h2>Игры:</h2>
-            <a href="{{ route('tags.single', ['slug' => 'otkrytyy-mir']) }}">Открытый мир</a>
-            <a href="{{ route('tags.single', ['slug' => 'gonki']) }}">Гонки</a>
-            <a href="{{ route('tags.single', ['slug' => 'stels']) }}">Стелс</a>
-            <a href="{{ route('tags.single', ['slug' => 'igry-s-onlaynom']) }}">Игры с онлайном</a>
-            <a href="{{ route('tags.single', ['slug' => 'zombi']) }}">Зомби</a>
-            <a href="{{ route('tags.single', ['slug' => 'horror']) }}">Хоррор</a>
-            <a href="{{ route('tags.single', ['slug' => 'sportivnye']) }}">Спортивные</a>
-            <a href="{{ route('tags.single', ['slug' => 'vyzhivanie']) }}">Выживание</a>
-            <a href="{{ route('tags.single', ['slug' => 'draki']) }}">Драки</a>
-            <a href="{{ route('tags.single', ['slug' => 'arkady']) }}">Аркады</a>
-            <a href="{{ route('tags.single', ['slug' => 'ozhidaemye']) }}">Ожидаемые</a>
-            <a href="{{ route('tags.single', ['slug' => 'ekshen']) }}">Экшен</a>
-            <a href="{{ route('tags.single', ['slug' => 'dlya-slabyh-pk']) }}">Для слабых ПК</a>
-            <a href="{{ route('tags.single', ['slug' => 'shutery']) }}">Шутеры</a>
-            <a href="{{ route('tags.single', ['slug' => 'horoshiy-syuzhet']) }}">Хороший сюжет</a>
-            <a href="{{ route('tags.single', ['slug' => 'horoshaya-grafika']) }}">Хорошая графика</a>
-            <a href="{{ route('tags.single', ['slug' => 'rolevye-rpg']) }}">Ролевые (Rpg)</a>
-            <a href="{{ route('tags.single', ['slug' => 'simulyatory']) }}">Симуляторы</a>
-            <a href="{{ route('tags.single', ['slug' => 'priklyucheniya']) }}">Приключения</a>
-            <a href="{{ route('tags.single', ['slug' => 'vr-igry']) }}">VR-игры</a>
-            <a href="{{ route('tags.single', ['slug' => 'strategii']) }}">Стратегии</a>
-            <a href="{{ route('tags.single', ['slug' => 'ot-pervogo-lica']) }}">От первого лица</a>
-            <a href="{{ route('tags.single', ['slug' => 'ot-tretego-lica']) }}">От третьего лица</a>
+            <h2>Games:</h2>
+            <a href="{{ route('tags.single_en', ['slug' => 'otkrytyy-mir']) }}">Open World</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'gonki']) }}">Racing</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'stels']) }}">Stealth</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'igry-s-onlaynom']) }}">Online games</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'zombi']) }}">Zombies</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'horror']) }}">Horror</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'sportivnye']) }}">Sport</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'vyzhivanie']) }}">Survival</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'draki']) }}">Fighting</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'arkady']) }}">Arcade</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'ozhidaemye']) }}">Expected</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'ekshen']) }}">Action</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'dlya-slabyh-pk']) }}">For the weak pc</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'shutery']) }}">Shooter</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'horoshiy-syuzhet']) }}">Good story</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'horoshaya-grafika']) }}">Good graphic</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'rolevye-rpg']) }}">Role Play (Rpg)</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'simulyatory']) }}">Simulators</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'priklyucheniya']) }}">Adventures</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'vr-igry']) }}">VR-games</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'strategii']) }}">Strategy</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'ot-pervogo-lica']) }}">By first person</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'ot-tretego-lica']) }}">By third person</a>
             @php $date = date("Y")@endphp
-            <a href="{{ route('tags.single', ['slug' => $date]) }}">Игры @php echo date("Y"); @endphp</a>
+            <a href="{{ route('tags.single_en', ['slug' => $date]) }}">@php echo date("Y"); @endphp Games</a>
         </div>
         <div class="soft_admenu">
-            <h2>Софт:</h2>
-            <a href="{{ route('tags.single', ['slug' => 'dizayn']) }}">Дизайн</a>
-            <a href="{{ route('tags.single', ['slug' => 'audio']) }}">Аудио</a>
-            <a href="{{ route('tags.single', ['slug' => 'bezopasnost']) }}">Безопасность</a>
-            <a href="{{ route('tags.single', ['slug' => 'ofis']) }}">Офис</a>
-            <a href="{{ route('tags.single', ['slug' => 'windows']) }}">Windows</a>
-            <a href="{{ route('tags.single', ['slug' => 'programmirovanie']) }}">Программирование</a>
-            <a href="{{ route('tags.single', ['slug' => 'drayvery']) }}">Драйверы</a>
-            <a href="{{ route('tags.single', ['slug' => 'drugie']) }}">Другие</a>
+            <h2>Software:</h2>
+            <a href="{{ route('tags.single_en', ['slug' => 'dizayn']) }}">Design</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'audio']) }}">Audio</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'bezopasnost']) }}">Security</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'ofis']) }}">Office</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'windows']) }}">Windows</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'programmirovanie']) }}">Programming</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'drayvery']) }}">Drivers</a>
+            <a href="{{ route('tags.single_en', ['slug' => 'drugie']) }}">Others</a>
         </div>
         <div class="cheets_admenu">
-            <h2>Файлы:</h2>
-            <a href="{{ route('tags.cheatsTag', ['slug' => 'chit-mody']) }}">Чит-моды</a>
-            <a href="{{ route('tags.cheatsTag', ['slug' => 'sohraneniya']) }}">Сохранения</a>
-            <a href="{{ route('tags.cheatsTag', ['slug' => 'treynery']) }}">Трейнеры</a>
-            <a href="{{ route('tags.cheatsTag', ['slug' => 'mody']) }}">Моды</a>
+            <h2>Fails:</h2>
+            <a href="{{ route('tags.cheatsTag_en', ['slug' => 'chit-mody']) }}">Cheat-mods</a>
+            <a href="{{ route('tags.cheatsTag_en', ['slug' => 'sohraneniya']) }}">Saves</a>
+            <a href="{{ route('tags.cheatsTag_en', ['slug' => 'treynery']) }}">Trainers</a>
+            <a href="{{ route('tags.cheatsTag_en', ['slug' => 'mody']) }}">Mods</a>
         </div>
     </div>
 
