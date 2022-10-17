@@ -3072,6 +3072,7 @@ td, th {
 .DontForget{
     z-index: 10;
     margin-top: 10px;
+    margin-left: -385px;
 }
 .contact > .DontForgetT{
     width: 125px;

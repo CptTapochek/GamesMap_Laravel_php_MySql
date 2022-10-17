@@ -7,8 +7,8 @@
             <div class="wrapper">
                 <a href="{{route('home_en')}}">Main</a>
                 <a href="{{route('contact_en')}}" >Contact</a>
-                <a href="{{route('disclaimer_en')}}">Disclaimer</a>
-                <a href="{{route('faq_en')}}">FAQ</a>
+                <a href="{{route('disclaimer')}}">Disclaimer</a>
+                <a href="{{route('faq')}}">FAQ</a>
             </div>
             <div class="log_container">
                 @guest
